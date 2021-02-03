@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <nav>
-      <h1>The Solmei Blog</h1>
+    <nav className="navbar">
+      <h1>Solmei Blog</h1>
       <div className="links">
         <a href="/">Home</a>
         <a href="/create">New Blog</a>
