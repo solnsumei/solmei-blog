@@ -17,12 +17,6 @@
       "body": "Lorem isoosg psunjdlinn isbsns",
       "author": "yoshi",
       "id": 3
-    },
-    {
-      "title": "New Blog",
-      "body": "{!isPending && <button>Add Blog</button>",
-      "author": "yoshi",
-      "id": 4
     }
   ]
 }
