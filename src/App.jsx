@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
 import NotFound from './NotFound';
+import BlogDetails from './BlogDetails'
 
 
 const App = () => {
@@ -14,6 +15,9 @@ const App = () => {
           <Switch>
             <Route path="/create">
               <Create />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
             </Route>
             <Route exact path="/">
               <Home />
