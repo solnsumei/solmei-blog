@@ -22,7 +22,7 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route>
+            <Route path="*">
               <NotFound />
             </Route>
           </Switch>
