@@ -1,14 +1,30 @@
-import Navbar from './Navbar'
-import Home from './Home'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
+import Create from './Create';
+import NotFound from './NotFound';
+
 
 const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Home />
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route>
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
